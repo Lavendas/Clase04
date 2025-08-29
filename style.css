@@ -1,0 +1,75 @@
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0a0a0a; /* fondo negro oscuro */
+  color: #ffcc00;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #ff4d4d; /* rojo intenso estilo Thor */
+  text-decoration: none;
+  transition: all ease 1.5s;
+}
+
+a[href$=".pdf"] {
+  color: #00aaff; /* azul eléctrico */
+}
+
+a:hover {
+  color: #ffcc00; /* dorado estilo Mjölnir */
+  text-decoration: underline;
+  transition: all ease 1.5s;
+}
+
+a:hover:after {
+  content: " ⚡"; /* icono de rayo al pasar el cursor */
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif; /* fuente futurista/épica */
+  font-size: calc(3rem + 5vw);
+  color: #00aaff; /* azul eléctrico */
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #00aaff;
+}
+
+#bloque {
+  margin: 5rem;
+  padding: 2rem;
+  background: rgba(10, 10, 10, 0.85); /* negro semi-transparente */
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #00aaff, 0 0 40px #ff4d4d; /* efecto azul y rojo */
+}
+
+.xmas {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  color: #ffcc00; /* dorado */
+}
+
+.ajuste {
+  font-size: 130%;
+  color: #00aaff; /* azul eléctrico */
+}
+
+/*
+canvas {
+  display: block;
+}
+*/
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
